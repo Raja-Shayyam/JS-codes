@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function</title>
+</head>
+<h2>Temprature Converter</h2>
+<input type="text" id="in">
+<body>
+  <button id="in" onclick="C =document.querySelector('#in').value;
+  calculate(C)">proceed</button>
+  
+  <br>
+  <h4>
+  <output id="result">...</output>
+  </h4>
+  <script>
+    let F , C;
+    function calculate(C){
+      F = (9/5)*C+32;
+      document.querySelector('#result').innerHTML=`Fahrenhit of celcis ${C}°C is ${F}°F.`;
+      return F;
+    }
+    
+    
+    //document.querySelectorAll(result)=console.log(calculate(result));
+    //console.log(calculate(result));
+    //console.log(calculate(0));
+    //console.log(calculate(8.7));
+  </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Temperature Converter</title>
+</head>
+<body>
+  <h2>Convert Celsius to Fahrenheit</h2>
+  <input type="text" id="in" placeholder="Enter Celsius">
+  <button onclick="handleCalculate()">Convert</button>
+  <p id="result"></p>
+
+  <script>
+    function calculate(C) {
+      let F = (9 / 5) * C + 32;
+      document.querySelector('#result').innerHTML = `Fahrenheit equivalent of ${C}°C is ${F}°F.`;
+      return F;
+    }
+
+    function handleCalculate() {
+      let C = document.querySelector('#in').value;
+      if (C !== '') {
+        calculate(C);
+      } else {
+        alert('Please enter a value.');
+      }
+    }
+  </script>
+</body>
+</html> -->

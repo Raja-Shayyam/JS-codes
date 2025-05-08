@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Json && js objects</title>
+  <h1>The transfer b/w JSON && js</h1>
+</head>
+<body>
+  <script>
+    let product=
+    {
+      name: 'T-shirt',
+      price: 1200.5,
+      rating:
+      {
+        stars: 4.5 ,
+        reviews : 138
+      }
+    }
+        
+        /*
+    console.log(typeof product);
+    console.log(product);
+
+    let str = JSON.stringify(product);
+    console.log(typeof str ,`\n ${str}`);
+    //console.log(str);
+
+    let newProd = JSON.parse(str);
+    console.log(typeof newProd )
+    console.log(newProd);
+    */
+//localStorage.setItem('Name' , 'KG coding');
+//localStorage.setItem('price' , '2424');
+//localStorage.setItem('company' , 'KG ships');
+//localStorage.setItem('Name' , 'Rayyan');
+//console.log(localStorage.getItem('Name' ));
+//console.log(localStorage.getItem('price'));
+
+//localStorage.setItem('product' , JSON.stringify(product));
+
+console.log(localStorage.getItem('product'));
+
+
+
+
+
+  </script>
+</body>
+</html>

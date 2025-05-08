@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>task (- metro ticket -) test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: -webkit-box;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      background-color: #e1e0ad;
+      margin: 50px;
+      flex-wrap: wrap;
+    }
+    .bton {
+      margin: 2px;
+
+    }
+  </style>
+</head>
+<body>
+  <button class="bton" onclick=" age = 3;
+    gender = 'female';
+    geTicket(age, gender);
+  ">female</button>
+  
+  <button class="bton" onclick=" age = 6;
+    gender = 'child';
+   geTicket(age , gender);
+  ">child less than 8</button>
+
+  <button class="bton" onclick=" age = 9;
+    gender = 'child';
+   geTicket(age , gender);
+  ">child graeter than 8</button>
+
+  <button class="bton" onclick=" age = 17;
+    gender = 'Teen-ager';
+   geTicket(age , gender);
+  ">Teen-ager / student</button>
+
+  <button class="bton" onclick=" age = 63;
+    gender = 'grand person';
+   geTicket(age , gender);
+  ">person graeter than 59</button>
+<br><br>
+  <!-- ouput: <output id="text"></output>
+  <input type="text" id="Text">
+  <textarea name="output" id="text"></textarea>
+  <address id="text"></address> -->
+<textarea name="output" id="text" rows="4" cols="35">Ticket details...</textarea>
+
+  <script>
+    let  age , price = 120 , ticket , gender ;
+    function geTicket(age , gender){
+    if(gender === 'female' || age<=8 ){
+      ticket=price*0.5;
+    }else if(age<5){
+      ticket=0;
+    }else if(age>13 && age<26){
+      ticket = price*0.8;
+    }else if(age>= 60){
+      ticket=price*0.9;
+    }else{
+      ticket=price;
+    }
+
+    alert(`The genrated price of ticket : ${ticket}\nGender : ${gender}\nage : ${age}`)
+
+    document.querySelector('#text').innerHTML=(`The genrated price of ticket : ${ticket}\nGender : ${gender}\nage : ${age}`);
+    
+    console.log(`The genrated price of ticket : ${ticket}\nGender : ${gender}\nage : ${age}`);
+  }
+    //document.querySelector('.button').
+  </script>
+</body>
+</html>

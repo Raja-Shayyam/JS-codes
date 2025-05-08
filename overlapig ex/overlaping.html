@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute; /* Make the boxes positioned */
+        }
+
+        .box1 {
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            z-index: 0; /* Lower z-index */
+        }
+
+        .box2 {
+            background-color: blue;
+            top: 70px; /* Overlapping position */
+            left: 70px;
+            z-index: 1; /* Higher z-index */
+        }
+
+        .box3 {
+            background-color: green;
+            top: 190px; /* Overlapping position */
+            left: 90px;
+            z-index: 0; /* Lower z-index */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>

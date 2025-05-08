@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects in JS</title>
+</head>
+<body>
+  
+  <script>
+    let product1=
+    {
+        name: 'jeans' ,
+        size: 'Small' ,
+        fit: 'slim' ,
+        company: 'Boss' , 
+        stock: 20 ,
+        'delivery time' : 'in 1 day'
+    }
+/*
+    let copyProduct = product ;
+
+    console.log(product);
+    console.log([copyProduct]);
+    copyProduct.size = 'M';
+    console.log(copyProduct);
+
+    product.name = 'shorts';
+    console.log(copyProduct);
+    
+    console.log(product['delivery time']);
+    
+    let obj=
+    {
+      message: 'Good job you did !',
+      status: 'completed'
+    }
+    console.log(obj);
+    let {message , status } = obj ;
+    console.log(message,'\n',status);
+
+*/    
+let product2=
+    {
+        name: 'jeans' ,
+        size: 'Small' ,
+        fit: 'slim' ,
+        company: 'Boss' , 
+        stock: 20 ,
+        'delivery time' : 'in 1 day'
+    }    
+    
+function isIdenticalProduct(product1 , product2)
+{
+  if(product1 == product2){
+    return true;
+  }
+
+  if(typeof product1 !== 'object' || typeof product2 !== 'object'){
+    return console.warn('its error');
+  }
+
+  if(product1.name === product2.name && product1.size === product2.size && product1.fit === product2.fit && product1.stock === product2.stock){
+    return true;
+  }
+}
+
+
+console.log(isIdenticalProduct(product1,product2));
+
+  </script>
+</body>
+</html>

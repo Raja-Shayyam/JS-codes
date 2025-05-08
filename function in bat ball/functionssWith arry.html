@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bat Ball Code</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content:center;
+      align-items: left;
+      height: 20vh;
+      background-color: #f2ceaa;
+      margin: 90px;
+      flex-wrap: wrap;
+    } 
+    .bton{
+      width: 25%;
+      padding: 10px;
+      font-size: 15px;
+      margin: 5px;
+      border: 1.8px solid black;
+      border-radius: 2px;
+      cursor: pointer;
+      
+    }
+    h2{
+      text-align: center ;
+    }
+    #machine
+    {
+      width: 40vh;
+      height: 10vh;
+      font-size: 15px;
+      border: 1.5px solid black;
+      font-family: default;
+    }
+    #bton
+    {
+      margin-top: 4px;
+      margin-right: 216px;
+      border-radius: 0.2px;
+      display:inline-flex;
+    }
+  </style>
+  <h2>Bat Ball Stump Game</h2>
+</head>
+<body>
+  <button class="bton" onclick="console.log('Your choise is Bat') ; 
+  anynum_ = Math.random() * 3 ;
+  bot_choise ;
+  Machine_choise(anynum_);
+  result_check(bot_choise);
+
+   ">Bat</button>
+
+  <button class="bton" onclick="console.log('Your choise is Ball') ; 
+   anynum_ = Math.random() * 3 ;
+   bot_choise ;
+  Machine_choise(anynum_);
+   result_check(bot_choise);
+
+   ">Ball</button>
+   
+   <button class="bton" onclick="console.log('Your choise is Stump') ; 
+   anynum_ = Math.random() * 3 ;
+   bot_choise ;
+   Machine_choise(anynum_);
+   result_check(bot_choise);
+    
+    ">Stump</button>
+
+    <textarea name="text" id="machine"></textarea>
+    
+    <button id="bton" onclick="document.querySelector('#machine').innerHTML=''; count =1;
+    for_real_winear(result);
+    "> reset </button>
+
+    <script >
+      let count = 1;
+      let result=[];
+      let anynum_ ;
+      let bot_choise ;
+
+      function Machine_choise()
+      {
+        if(anynum_ > 0 && anynum_ <=1 ){
+          bot_choise ='BAT';
+          console.log(`Machine choise ${bot_choise}`);
+          }else if (anynum_ >1 && anynum_ <=2){
+           bot_choise = 'BALL';
+           console.log(`Machine choise ${bot_choise}`);
+           }else if(anynum_ >2 && anynum_ <=3 ){
+           bot_choise = 'Stump';
+           console.log(`Machine choise ${bot_choise}`);
+           }
+      }
+
+      function result_check(bot_choise)
+      {
+        let i=0;
+        if(bot_choise === 'BAT'){
+          //console.log('Machine goes to Lose.');
+          result[i]=('Machine goes to Lose.');
+          }else if(bot_choise === 'BALL'){
+          //console.log('Machine goes to Win.');
+          result[i]=('Machine goes to Win.');
+          }else if(bot_choise === 'Stump'){
+            //console.log('its gone to tie.');
+            result[i]=('its gone to tie.');
+          }//alert(`Machine choise is ${bot_choise} .\n So :>${ result} .`) ;
+          i++;
+          box_out();
+          count++;
+      }
+
+      function box_out()
+      {
+        if( count <=3){
+          document.querySelector('#machine').innerHTML=(`Machine choise is ${bot_choise} .\nSo:> ${ result}\ncurrent turn : ${count}`);}
+          else{
+            document.querySelector('#machine').innerHTML=(`Machine choise is ${bot_choise} .\nSo:> ${ result}\ncurrent turn : game over`);
+          }
+        }
+          
+          function for_real_winear(result) {
+            let isWinner = true; // Assuming all elements are equal initially
+    
+            for (let i = 0; i < result.length - 1; i++) {
+            if (result[i] !== result[i + 1]) {
+                isWinner = false; // If any elements are not equal, set isWinner to false
+                break; // Exit the loop early if a mismatch is found
+            }
+          }
+    
+          if (isWinner) {
+            alert(`Winner: ${result[0]}`);
+          } else {
+            alert('No winner');
+          }
+        }
+        
+
+      // as i declare it here so i need not to declare it again here like under...
+      // this condition is not working yet .?
+      //if(count <=3)
+      //Document.querySelector('#bton')='Game is ouver now!';
+</script>
+</body>
+</html>

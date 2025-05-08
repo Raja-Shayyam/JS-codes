@@ -1,0 +1,25 @@
+.Add
+{
+    background-color:lightgreen;
+    border:none;
+    padding:5px 15px;
+    border-radius: 10px;
+
+}
+
+.move
+{
+    background-color:white;
+    padding:8px 16px;
+    border:2px solid black;
+    border-radius:12px;
+    text-transform:uppercase;
+}
+
+#bag-txt
+{
+    border:1px solid black;
+    padding: 2px 4px;
+    border-radius:5px;
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bat Ball Code</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      background-color: #e1e0ad;
+      margin: 90px;
+      flex-wrap: wrap;
+    } 
+    .bton{
+      width: 25%;
+      padding: 10px;
+      font-size: 15px;
+      margin: 5px;
+      border: 1px solid black;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    h2{
+      text-align: left ;
+    }
+    #machine
+    {
+      width: 40vh;
+      height: 10vh;
+      font-size: 15px;
+      font-family: default;
+    }
+  </style>
+  <h2>Bat Ball Stump Game</h2>
+</head>
+<body>
+  <button class="bton" onclick="console.log('Your choise is Bat') ; 
+  let anynum_ = Math.random() * 3 ;
+  let bot_choise ;
+  if(anynum_ > 0 && anynum_ <=1 ){
+  bot_choise ='BAT';
+  console.log(`Machine choise ${bot_choise}`);
+  } else if (anynum_ >1 && anynum_ <=2){
+   bot_choise = 'BALL';
+   console.log(`Machine choise ${bot_choise}`);
+   }else if(anynum_ >2 && anynum_ <=3 ){
+   bot_choise = 'Stump';
+   console.log(`Machine choise ${bot_choise}`);
+   }
+   let result ='';
+  if(bot_choise === 'BAT'){
+  //console.log('its gone to tie.');
+  result=('its gone to tie.');
+  }else if(bot_choise === 'BALL'){
+  //console.log('Machine goes to Lose.');
+  result=('Machine goes to Lose.');
+  }else if(bot_choise === 'Stump'){
+  //console.log('Machine goes to Win.');
+  result=('Machine goes to Win.');
+  }//alert(`Machine choise is ${bot_choise} .\n So :>${ result} .`) ;
+   document.querySelector('#machine').innerHTML=(`Machine choise is ${bot_choise} .\nSo:> ${ result}\ncurrent turn : ${count++}`)
+   ">Bat</button>
+
+  <button class="bton" onclick="console.log('Your choise is Ball') ; 
+   let anynum_ = Math.random() * 3 ;
+   let bot_choise ;
+  if(anynum_ > 0 && anynum_ <=1 ){
+  bot_choise ='BAT';
+  console.log(`Machine choise ${bot_choise}`);
+  } else if (anynum_ >1 && anynum_ <=2){
+   bot_choise = 'BALL';
+   console.log(`Machine choise ${bot_choise}`);
+   }else if(anynum_ >2 && anynum_ <=3 ){
+   bot_choise = 'Stump';
+   console.log(`Machine choise ${bot_choise}`);
+   }
+  let result=''; 
+  if(bot_choise === 'BAT'){
+  //console.log('Machine goes to Win.');
+  result=('Machine goes to Win.');
+  }else if(bot_choise === 'BALL'){
+  //console.log('its gone to tie.');
+  result=('its gone to tie.');
+  }else if(bot_choise === 'Stump'){
+  //console.log('Machine goes to Lose.');
+  result=('Machine goes to Lose.');
+  }//alert(`Machine choise is ${bot_choise} .\n So :>${ result} .`) ;
+   document.querySelector('#machine').innerHTML=(`Machine choise is ${bot_choise} .\nSo:> ${ result}\ncurrent turn : ${count++}`)
+   ">Ball</button>
+   
+   <button class="bton" onclick="console.log('Your choise is Stump') ; 
+   let anynum_ = Math.random() * 3 ;
+   let bot_choise ;
+   if(anynum_ > 0 && anynum_ <=1 ){
+    bot_choise ='BAT';
+  console.log(`Machine choise ${bot_choise}`);
+  } else if (anynum_ >1 && anynum_ <=2){
+   bot_choise = 'BALL';
+   console.log(`Machine choise ${bot_choise}`);
+   }else if(anynum_ >2 && anynum_ <=3 ){
+    bot_choise = 'Stump';
+   console.log(`Machine choise ${bot_choise}`);
+   }
+   let result='';
+  if(bot_choise === 'BAT'){
+  //console.log('Machine goes to Lose.');
+  result=('Machine goes to Lose.');
+  }else if(bot_choise === 'BALL'){
+  //console.log('Machine goes to Win.');
+  result=('Machine goes to Win.');
+  }else if(bot_choise === 'Stump'){
+    //console.log('its gone to tie.');
+    result=('its gone to tie.');
+  }//alert(`Machine choise is ${bot_choise} .\n So :>${ result} .`) ;
+    
+    if( count <='4' ){
+    document.querySelector('#machine').innerHTML=(`Machine choise is ${bot_choise} .\nSo:> ${ result}\ncurrent turn : ${count}`);}
+    else if(cout>=3){
+    document.querySelector('#machine').innerHTML=(`Machine choise is ${bot_choise} .\nSo:> ${ result}\ncurrent turn : game over`);}
+    count++;
+    ">Stump</button>
+    <textarea name="text" id="machine"></textarea>
+    <script >
+      let count = 1;
+
+      // as i declare it here so i need not to declare it again here like under...
+      // this condition is not working yet .?
+      //if(count <=3)
+      //Document.querySelector('#bton')='Game is ouver now!';
+      
+</script>
+</body>
+</html>

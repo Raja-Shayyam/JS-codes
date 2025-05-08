@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>my practice 2:3 Myntra </title>
+        <h1 id="main">KG coding</h1>
+        <link rel="stylesheet" href="Myntra-practice.css">
+    </head>
+    <body>
+        <button class="Add" onclick="cartQuantity+=1 ; document.querySelector('#bag-txt').innerText = `Your bag has ${cartQuantity} items`">Add to bag</button>
+
+        <button class="move" onclick="cartQuantity -=1; document.querySelector('#bag-txt').innerText = `Your bag has ${cartQuantity} items`">move to WishList</button>
+        
+        <button class="Add" onclick="cartQuantity -=2 ; document.querySelector('#bag-txt').innerText = `Your bag has ${cartQuantity} items` ">Add 1+1 sale item</button>
+<hr>
+        <h2 id="bag-txt">Your bag has 0 items</h2>
+
+
+        <script>
+            let cartQuantity = 0 ;
+            //document.querySelector('#bag-txt').innerText = `your bag ${cartQuantity} exists.`; 
+        </script>
+    </body>
+</html>

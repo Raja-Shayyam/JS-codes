@@ -1,0 +1,63 @@
+body{
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(103, 99, 99, 0.84);
+}
+
+#header
+{
+  text-align: center;
+  font: 1em sans-serif;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.myItems-list{
+  margin-top: 4px;
+  font-family:cursive;
+  /* background-color: burlywood; */
+  background: linear-gradient(#3498db, #2ecc71);
+  background-position-x: 60px;
+  width: 330px;     /* Set the width of the box */
+  height:auto;      /* Set the height of the box */
+  padding: 10px;
+}
+#del-place{
+  background-color:#da5252;
+  left:325px;
+  color: aliceblue;
+  border-radius: 2px;
+  border: 0.5px;
+  border-style:groove;
+  margin-bottom: 4px;
+  /* position:absolute; */
+  position: sticky;
+}
+
+.todo-myDate{
+  background-color:#b1e2e8de;
+  margin-bottom: 4px;
+  left:205px;
+  border-color: 1px solid black;
+  /* position:absolute;  */
+  position: sticky;
+  font-size:medium;
+  
+}
+
+#add-dolist{
+  margin-left:5px;
+  color: aliceblue;
+  border-radius: 2px;
+  border: 0.5px;
+  border-style:groove;
+  /* position:absolute;  */
+  position: sticky;
+  background-color: rgb(118, 205, 98);
+}
+
+/* #todo-mytxt{
+
+} */

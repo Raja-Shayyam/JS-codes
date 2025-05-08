@@ -1,0 +1,110 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#calculator {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Display styles */
+#display {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1f3f5;
+  text-align: right;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#display:focus {
+  outline: none;
+}
+
+/* Button container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+/* Button styles */
+button.d {
+  background-color: #e9ecef;
+  color: #212529;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.d:hover {
+  background-color: #ced4da;
+}
+
+button.d:active {
+  transform: scale(0.9);
+}
+
+/* Special styles for operation and function buttons */
+button.operation {
+  background-color: #ff7043;
+  color: #ffffff;
+}
+
+button.operation:hover {
+  background-color: #ff5722;
+}
+
+button#equals {
+  background-color: #4caf50;
+  color: #ffffff;
+  grid-column: span 1;
+}
+
+button#equals:hover {
+  background-color: #388e3c;
+}
+
+button#clear {
+  background-color: #f44336c2;
+  color: #ffffff;
+}
+
+button#clear:hover {
+  background-color: #d32f2f;
+}
+
+button#decimal {
+  background-color: #9b27b0b7;
+  color: #ffffff;
+}
+
+button#decimal:hover {
+  background-color: #7b1fa2;
+}
